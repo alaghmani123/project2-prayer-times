@@ -1,10 +1,11 @@
-// import React from 'react';
+import React from 'react';
 
-// const Home = () => (
-//   <div>
-//     <h1>prayer Website</h1>
-//     <p>five time prayer</p>
-//   </div>
-// )
+const Home = () => (
+  <div>
+    <h1>home page</h1>
+    <p>Welcome to home page</p>
+    <p></p>
+  </div>
+)
 
-// export default Home
+export default Home
