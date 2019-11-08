@@ -6,6 +6,7 @@ import axios from "axios"
 
 class Prayer extends React.Component {
 
+
   state = {
     lat: null,
     long: null,
@@ -13,9 +14,9 @@ class Prayer extends React.Component {
     city: null,
     country: null,
     array: [],
-    text: null
+    Verse: ""
   };
-
+  
   componentDidMount() {
     window.navigator.geolocation.getCurrentPosition(position =>
       this.setState(
@@ -100,7 +101,7 @@ class Prayer extends React.Component {
       console.log(response.data.data.ayahs[randomNumber].text)
 
       this.setState({
-        text: response.data.data.ayahs[randomNumber].text
+        Verse: response.data.data.ayahs[randomNumber].text
       })
     })
   }
@@ -116,8 +117,10 @@ class Prayer extends React.Component {
           this.state.city &&
           this.state.country ? (
             <div>
-              <div>longitude: {this.state.long}</div>
-              <div>latitude: {this.state.lat}</div>
+
+              <h1>PRAYER TIMES</h1>
+              <div>Current longitude: {this.state.long}</div>
+              <div>Current latitude: {this.state.lat}</div>
               <div>City: {this.state.city}</div>
               <div>country: {this.state.country}</div>
               {/* {this.state.array} */}
@@ -132,7 +135,7 @@ class Prayer extends React.Component {
         <div>
           <button className="buttonContainer" onClick={() => this.QuranApi()}>random</button>
         {/* <p>{this.state.rquran}</p> */}
-          <div>text: {this.state.text}</div>
+          <div>Verse: {this.state.Verse}</div>
           <form onSubmit={(e) => this.onFormSearch(e)}>
             <input onChange={(e) => this.setState({ city: e.target.value })} name="city" type="text" placeholder="Enter City" />
             <input type='submit' value="Search Another City " />

@@ -25,10 +25,14 @@ a:link, a:visited {
   padding: 5px 5px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
+/* /* border: 1px solid #fff;
+  width: 900px;
+  display: flex; */
+  /* justify-content: space-around; */ 
 
 body {
   text-align: center;
@@ -57,12 +61,14 @@ body {
 } */
 
 /* .Prayer {
-  background-image: url('https://i.pinimg.com/originals/3e/1a/e2/3e1ae2771a445f3bed87c248663f8c14.gif')
+  background-image: url('https://img.freepik.com/free-vector/pastel-oil-painting-canvas-background_53876-93729.jpg?size=626&ext=jpg')
 } */
 
 
 
-
+/* .title {
+  color: aquamarine;
+} */
 a:hover, a:active {
   background-color:goldenrod;
 }

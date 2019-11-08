@@ -1,68 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Prayer Times
+<<<<<<<user stories
 
-## Available Scripts
+As a registered user I want to be able to see what is the prayer time for my location.
 
-In the project directory, you can run:
+As a registered user I want to be able to see what is the prayer time for other cities too.
 
-### `npm start`
+As a registered user i want to be able to see when is the sunset and sunrise so i can pray according and don't miss my prayers.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+As a register user I want to be able to get a random verse from Quran for everyday.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+As an unregisterd user i want to have a About page and prayer info so that i can get a more indept 
+<<<<<wireframe
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- ![Alt text](./wireframe.png "wireframe") -->
 
-### `npm run build`
+<<<<<<<<future ideas
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+i would have added an option for users to be able to get a notification on there devices alerting them that its prayer time.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+i would have added an option for users to be able to get a countdown for when or how many hours later is the next prayer time.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+i would like to add an option were the user able to read the Quran and mark where the stopped.
 
-### `npm run eject`
+<<<<<technology used
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+git hub and visual studio code application. Also i used API And geolocation of the user.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+sources: w3 school, free code academy
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<<<<installation
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+All you need is: Command Line, Web Browser, Internet Connectivity, terminal, JavaScript support,
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<<<<<<instructions 
+Prayer Times is an application built for Muslims who live in non-Islamic countries and cannot hear adhan (or azan) - the call to prayer - 5 times a day. The Prayer Times API is in JSON formats and allows users to stream the prayer announcement Adhan five times a day. Endpoints support prayer times calendar, geolocation information, and current time-stamp.
+<<<<<<Background info
+im a practicing muslim and im very intersted in my religious background. before even starting this project i wanted to do something related to my background
