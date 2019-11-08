@@ -22,7 +22,7 @@ body {
 a:link, a:visited {
   background-color: darkgray;
   color: white;
-  padding: 5px 5px;
+  padding: 2px 2px;
   text-align: center;
   text-decoration: none;
   /* display: inline-block; */
@@ -33,7 +33,19 @@ a:link, a:visited {
   width: 900px;
   display: flex; */
   /* justify-content: space-around; */ 
+.info {
+  text-align: center;
+  color: red;
 
+}
+.Duas {
+  columns: 3;
+  padding: 14px 85px;
+  color:white;
+  font-size: 15px;
+  text-align: center;
+
+}
 body {
   text-align: center;
   text-decoration-style: double;
@@ -86,7 +98,7 @@ code {
     monospace;
 }
 
-.flex-container > div {
+/* .flex-container > div {
   background-color: #f1f1f1;
   width: 100px;
   margin: 10px;
@@ -95,5 +107,15 @@ code {
   font-size: 30px;
   display: flex;
   flex-wrap: nowrap;
-  background-color: DodgerBlue;
+  background-color: DodgerBlue; */
+
+.AboutPage {
+  font-family: serif;
+  font-size: 20px;
+}
+.homePage {
+  text-align: center;
+  color: goldenrod;
+  font-size: 100px;
+  
 }

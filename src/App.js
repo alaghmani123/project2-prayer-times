@@ -5,6 +5,7 @@ import Search from './Search';
 import Home from "./Home";
 import Prayer from "./Prayer";
 import About from "./About";
+import PrayerToSay from "./PrayerToSay";
 
  import {
    BrowserRouter as Router,
@@ -39,6 +40,8 @@ class App extends Component {
                 <Link to="/prayer">prayer Time</Link>
             
                 <Link to="/About">About</Link>
+
+                <Link to="/PrayerToSay">Prayers</Link>
             
             
           </nav>
@@ -48,6 +51,8 @@ class App extends Component {
             <Route path="/prayer" component={Prayer}></Route>
 
             <Route path="/About" component={About}></Route>
+
+            <Route path="/PrayerToSay" component={PrayerToSay}></Route>
             
           </Switch>
         </Router>
