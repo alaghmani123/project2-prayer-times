@@ -7,9 +7,63 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background: black; */
 }
+a:hover, a:active {
+  background-color:  lightpink;
+}
+/* body {
+  background-image: url('https://i.pinimg.com/736x/0a/21/11/0a2111abeba0717c8320d9587e74bd16.jpg');
+} */
 
+.buttonContainer {
+  padding: 14px 25px;
+  color: chocolate;
+  text-align: center;
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+body {
+  text-align: center;
+  text-decoration-style: double;
+  color: #f44336;
+  font-size: 30px;
+
+  /* background-color: lightblue; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url('https://mymodernmet.com/wp/wp-content/uploads/2018/04/islamic-architecture-2.jpg')
+  
+}
+
+
+
+
+
+
+
+a:hover, a:active {
+  background-color: red;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 

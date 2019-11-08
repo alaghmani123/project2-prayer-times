@@ -12,7 +12,8 @@ class Prayer extends React.Component {
     errorMessage: "",
     city: null,
     country: null,
-    array: []
+    array: [],
+    text: null
   };
 
   componentDidMount() {
@@ -55,7 +56,7 @@ class Prayer extends React.Component {
     this.prayerApi()
   }
 
-  
+
   prayerApi = () => {
 
 
@@ -74,36 +75,40 @@ class Prayer extends React.Component {
           <p>Asr: {date.timings.Asr}</p>
           <p>Maghrib: {date.timings.Maghrib}</p>
           <p>Isha: {date.timings.Isha}</p>
+          <h3>Sunrise: {date.timings.Sunrise}</h3>
+          <h3>Midnight: {date.timings.Midnight}</h3>
+          
         </div>
 
       // });
       // this.setState({ array });
       this.setState({ singleTiming })
     });
-    
-    axios({
-          method: "GET",
-          url: `http://api.alquran.cloud/v1/sajda/en.asad`
-        }).then(response => {
-          console.log('quran',response.data.data)
-        })
 
+    
+
+  
   };
 
- 
-    QuranApi = () => {
-      axios({
-        method: "GET",
-        url: `http://api.alquran.cloud/v1/surah`
-      }).then(response => {
-        console.log('quran',response.config)
+  QuranApi = () => {
+    const randomNumber = Math.floor((Math.random() * 15) + 1);
+
+    axios({
+      method: "GET",
+      url: `http://api.alquran.cloud/v1/sajda/en.asad`
+    }).then(response => {
+      console.log(response.data.data.ayahs[randomNumber].text)
+
+      this.setState({
+        text: response.data.data.ayahs[randomNumber].text
       })
-    }
-  
-    
+    })
+  }
+
+
 
   render() {
-   
+
     return (
       <div>
         {this.state.long &&
@@ -125,17 +130,19 @@ class Prayer extends React.Component {
 
           )}
         <div>
-          <div>{this.QuranApi}</div>
+          <button className="buttonContainer" onClick={() => this.QuranApi()}>random</button>
+        {/* <p>{this.state.rquran}</p> */}
+          <div>text: {this.state.text}</div>
           <form onSubmit={(e) => this.onFormSearch(e)}>
-            <input onChange={(e) => this.setState({ city: e.target.value })} name="city" type="text" placeholder="city?" />
-            <input type='submit' value="Get city Prayer time" />
+            <input onChange={(e) => this.setState({ city: e.target.value })} name="city" type="text" placeholder="Enter City" />
+            <input type='submit' value="Search Another City " />
           </form>
         </div>
       </div>
-      
+
     )
   }
-  
+
 }
 
 
