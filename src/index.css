@@ -7,9 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background: black; */
 }
-a:hover, a:active {
-  background-color:  lightpink;
-}
+/* a:hover, a:active {
+  background-color:  rgb(193, 255, 182);
+} */
 /* body {
   background-image: url('https://i.pinimg.com/736x/0a/21/11/0a2111abeba0717c8320d9587e74bd16.jpg');
 } */
@@ -20,37 +20,51 @@ a:hover, a:active {
   text-align: center;
 }
 a:link, a:visited {
-  background-color: #f44336;
+  background-color: darkgray;
   color: white;
-  padding: 14px 25px;
+  padding: 5px 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 body {
   text-align: center;
   text-decoration-style: double;
-  color: #f44336;
-  font-size: 30px;
+  color: goldenrod;
+  font-size: 20px;
+  font-family: sans-serif;
 
   /* background-color: lightblue; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url('https://mymodernmet.com/wp/wp-content/uploads/2018/04/islamic-architecture-2.jpg')
+  background-image: url('https://freedesignfile.com/upload/2019/02/Islam-golden-decor-background-vectors-set-03-280x235.jpg')
   
 }
+/* //https://media2.giphy.com/media/l5VUcb627Ex6o/source.gif */
 
+/* .homePage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url('https://img.freepik.com/free-vector/abstract-geometric-islamic-background_1217-786.jpg?size=338&ext=jpg')
+  
+} */
 
-
+/* .Prayer {
+  background-image: url('https://i.pinimg.com/originals/3e/1a/e2/3e1ae2771a445f3bed87c248663f8c14.gif')
+} */
 
 
 
 
 a:hover, a:active {
-  background-color: red;
+  background-color:goldenrod;
 }
 h1 {
   color: white;
@@ -66,4 +80,14 @@ code {
     monospace;
 }
 
-
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}

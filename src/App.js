@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import "./App";
 import axios from "axios";
 import Search from './Search';
-import Home from "./Home"
-import Prayer from "./Prayer"
+import Home from "./Home";
+import Prayer from "./Prayer";
+import About from "./About";
 
  import {
    BrowserRouter as Router,
@@ -32,21 +33,21 @@ class App extends Component {
       <div>
         <Router>
           <nav>
-            <ul>
-              <li>
+           
                 <Link to="/">Home page</Link>
-
-              </li>
-              <li>
+             
                 <Link to="/prayer">prayer Time</Link>
-              </li>
-            </ul>
+            
+                <Link to="/About">About</Link>
+            
             
           </nav>
           <Switch>
             <Route exact path="/" component={Home}></Route>
 
             <Route path="/prayer" component={Prayer}></Route>
+
+            <Route path="/About" component={About}></Route>
             
           </Switch>
         </Router>
