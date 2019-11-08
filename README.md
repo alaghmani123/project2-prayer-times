@@ -12,8 +12,7 @@ As a register user I want to be able to get a random verse from Quran for everyd
 As an unregisterd user i want to have a About page and prayer info so that i can get a more indept 
 <<<<<wireframe
 
-
-<!-- ![Alt text](./wireframe.png "wireframe") -->
+![Wireframe](https://git.generalassemb.ly/alaghmani123/Project-2-prayer-times/blob/master/Wireframes/IMG_1742.JPG)
 
 <<<<<<<<future ideas
 
