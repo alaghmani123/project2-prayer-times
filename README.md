@@ -34,5 +34,6 @@ All you need is: Command Line, Web Browser, Internet Connectivity, terminal, Jav
 
 <<<<<<instructions 
 Prayer Times is an application built for Muslims who live in non-Islamic countries and cannot hear adhan (or azan) - the call to prayer - 5 times a day. The Prayer Times API is in JSON formats and allows users to stream the prayer announcement Adhan five times a day. Endpoints support prayer times calendar, geolocation information, and current time-stamp.
+
 <<<<<<Background info
-im a practicing muslim and im very intersted in my religious background. before even starting this project i wanted to do something related to my background
+im a practicing muslim and im very intersted in my religious background. before even starting this project i wanted to do something related to my background. so i created the Prayer Time for my community.
