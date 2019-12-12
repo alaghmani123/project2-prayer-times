@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from "axios"
-// import App from "./App"
+
 
 
 
@@ -14,6 +14,7 @@ class Prayer extends React.Component {
     city: null,
     country: null,
     array: [],
+    GetTime: Number,
     Verse: ""
   };
   
@@ -50,11 +51,13 @@ class Prayer extends React.Component {
   }
   handleChange(e) {
     this.setState({ city: e.target.value })
+    
   }
 
   onFormSearch = event => {
     event.preventDefault()
     this.prayerApi()
+    
   }
 
 
@@ -63,11 +66,11 @@ class Prayer extends React.Component {
 
     axios({
       method: "GET",
-      url: `http://api.aladhan.com/v1/calendarByAddress?address=${this.state.city}&method=2&month=04&year=2017`
+      url: `https://api.aladhan.com/v1/calendarByAddress?address=${this.state.city}&method=2&month=04&year=2017`
 
     }).then(response => {
       let date = response.data.data[0]
-      // let array = response.data.data.map((date, index) => {
+   
       console.log(date.timings);
       let singleTiming =
         <div>
@@ -81,8 +84,7 @@ class Prayer extends React.Component {
           
         </div>
 
-      // });
-      // this.setState({ array });
+      
       this.setState({ singleTiming })
     });
 
@@ -96,9 +98,9 @@ class Prayer extends React.Component {
 
     axios({
       method: "GET",
-      url: `http://api.alquran.cloud/v1/sajda/en.asad`
+      url: `https://api.alquran.cloud/v1/sajda/en.asad`
     }).then(response => {
-      console.log(response.data.data.ayahs[randomNumber].text)
+      console.log(response.data.data.ayahs[randomNumber])
 
       this.setState({
         Verse: response.data.data.ayahs[randomNumber].text
@@ -108,10 +110,17 @@ class Prayer extends React.Component {
 
 
 
+
   render() {
 
     return (
       <div>
+          <p className="App-clock">
+          
+          Your time is {(new Date()).toLocaleTimeString()}
+          {/* {(window.navigator.geolocation.getCurrentPosition)} */}
+          <i class="huge clock outline icon"></i>
+        </p> 
         {this.state.long &&
           this.state.lat &&
           this.state.city &&
@@ -123,22 +132,33 @@ class Prayer extends React.Component {
               <div>Current latitude: {this.state.lat}</div>
               <div>City: {this.state.city}</div>
               <div>country: {this.state.country}</div>
-              {/* {this.state.array} */}
+              
+           
               {this.state.singleTiming}
             </div>
           ) : (
+            
             <div>
-              <p>Loading</p>
+              <div>
+              {/* (new Date()).toLocaleTimeString() */}
+            
+          
+        </div>
+              
+              
+              <h1>Please Accept Location Request To Continue</h1>
+              <i class="huge notched circle loading icon"></i>
             </div>
 
           )}
         <div>
-          <button className="buttonContainer" onClick={() => this.QuranApi()}>random</button>
-        {/* <p>{this.state.rquran}</p> */}
+          <button className="buttonContainer" onClick={() => this.QuranApi()}>GET THE VERSE OF THE DAY </button>
+       
           <div>Verse: {this.state.Verse}</div>
           <form onSubmit={(e) => this.onFormSearch(e)}>
             <input onChange={(e) => this.setState({ city: e.target.value })} name="city" type="text" placeholder="Enter City" />
-            <input type='submit' value="Search Another City " />
+            <input type='submit' value="Search location" />
+
           </form>
         </div>
       </div>

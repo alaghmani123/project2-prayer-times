@@ -5,13 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background: black; */
+ 
 }
-/* a:hover, a:active {
-  background-color:  rgb(193, 255, 182);
-} */
-/* body {
-  background-image: url('https://i.pinimg.com/736x/0a/21/11/0a2111abeba0717c8320d9587e74bd16.jpg');
+/* .notched-circle-loading-icon {
+
 } */
 
 .buttonContainer {
@@ -22,17 +19,17 @@ body {
 a:link, a:visited {
   background-color: darkgray;
   color: white;
-  padding: 2px 2px;
+  padding: 5px 1px 3px 20px;
+  margin: 3px;
+  padding-top: 2px;
   text-align: center;
   text-decoration: none;
-  /* display: inline-block; */
+ 
   display: flex;
+  font-size: bold;
   justify-content: left;
 }
-/* /* border: 1px solid #fff;
-  width: 900px;
-  display: flex; */
-  /* justify-content: space-around; */ 
+
 .info {
   text-align: center;
   color: red;
@@ -50,10 +47,10 @@ body {
   text-align: center;
   text-decoration-style: double;
   color: goldenrod;
-  font-size: 20px;
+  font-size: 15px;
   font-family: sans-serif;
 
-  /* background-color: lightblue; */
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,53 +58,33 @@ body {
   background-image: url('https://freedesignfile.com/upload/2019/02/Islam-golden-decor-background-vectors-set-03-280x235.jpg')
   
 }
-/* //https://media2.giphy.com/media/l5VUcb627Ex6o/source.gif */
-
-/* .homePage {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-image: url('https://img.freepik.com/free-vector/abstract-geometric-islamic-background_1217-786.jpg?size=338&ext=jpg')
-  
-} */
-
-/* .Prayer {
-  background-image: url('https://img.freepik.com/free-vector/pastel-oil-painting-canvas-background_53876-93729.jpg?size=626&ext=jpg')
-} */
 
 
 
-/* .title {
-  color: aquamarine;
-} */
 a:hover, a:active {
   background-color:goldenrod;
 }
 h1 {
   color: white;
   text-align: center;
+  
 }
 
 p {
   font-family: verdana;
-  font-size: 20px;
+  font-size: 15px;
+  font-style: italic;
+  color: white;
+  margin: 40px;
+  
+
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-/* .flex-container > div {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: DodgerBlue; */
+
 
 .AboutPage {
   font-family: serif;
@@ -117,5 +94,16 @@ code {
   text-align: center;
   color: goldenrod;
   font-size: 100px;
+  padding: 10px;
+  background-size: cover;
+  background-image: url("https://media.giphy.com/media/3oEduXpUkXpRgAxfAk/giphy.gif");
+
   
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #A9A9A9;
+
+}
+h6 {
+  font-size: 50px;
 }
